@@ -249,7 +249,7 @@ const Home = () => {
       {/* HEEEERO */}
 
       {/* IMAGE POP-UP PROJECTION */}
-        <div className={!closePop ? "hidden absolute top-0 left-0 w-full h-full md:flex justify-center items-center bg-black/80" : 'hidden'}>
+        <div className={closePop ? "hidden absolute top-0 left-0 w-full h-full md:flex justify-center items-center bg-black/80" : 'hidden'}>
             <div className="grid place-content-center max-w-md p-2 gap-4 space-y-8">
                 <div className="flex flex-col gap-4 justify-between items-center">
                     <div className="flex items-end flex-col gap-4" >
