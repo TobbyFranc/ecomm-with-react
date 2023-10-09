@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@100;200;400;600&display=swap');
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.navList{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    color: hsl(219, 9%, 45%);
+}
+
+.navList span{
+    width: 40px;
+    height: 4px;
+    background: hsl(26, 100%, 55%);
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.navList:hover{
+    color: hsl(220, 13%, 13%);
+}
+
+.navList:hover span{
+    display: inline;
 }
